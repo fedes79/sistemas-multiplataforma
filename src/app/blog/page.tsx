@@ -1,4 +1,5 @@
 'use client'
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -11,21 +12,21 @@ export default function BlogPage() {
     const [searchTerm, setSearchTerm] = useState("");
     const [selectedCategory, setSelectedCategory] = useState("");
     const [filteredBlogPosts, setFilteredBlogPosts] = useState(blogPosts.slice(1));
-
+    
     useEffect(() => {
         const lowercasedSearchTerm = searchTerm.toLowerCase();
         const filtered = blogPosts.filter(post => {
             const matchesSearch = post.title.toLowerCase().includes(lowercasedSearchTerm) ||
-                post.excerpt.toLowerCase().includes(lowercasedSearchTerm) ||
-                post.author.toLowerCase().includes(lowercasedSearchTerm);
+            post.excerpt.toLowerCase().includes(lowercasedSearchTerm) ||
+            post.author.toLowerCase().includes(lowercasedSearchTerm);
             
             const matchesCategory = selectedCategory === "" || post.category === selectedCategory;
-
+            
             return matchesSearch && matchesCategory;
         });
         setFilteredBlogPosts(filtered);
     }, [searchTerm, selectedCategory]);
-
+       
     return (
         <div className="bg-light min-vh-100 py-5">
             <div className="container">

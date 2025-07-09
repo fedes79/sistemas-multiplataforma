@@ -10,7 +10,7 @@ interface BlogPostPageProps {
   }
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const post = blogPosts.find((p) => p.id === params.slug)
 
   if (!post) {

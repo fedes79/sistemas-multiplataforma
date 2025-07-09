@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link"
 import Image from "next/image"
 import { Calendar, Clock, User } from "lucide-react"
@@ -8,16 +7,16 @@ interface BlogCardProps {
   post: BlogPost
 }
 
-
-
 export default function BlogCard({ post }: BlogCardProps) {
+  console.log('post.image:', post.image, 'post.title:', post.title);
   return (
     <article className="card h-100 border-0 shadow-sm card-hover">
       <div className="position-relative" style={{ height: "200px" }}>
         <Image
           src={post.image || "/placeholder.svg"}
           alt={post.title}
-          fill
+          width={300}
+          height={200}
           className="card-img-top object-fit-cover rounded-top"
         />
         <div className="position-absolute top-0 start-0 m-3">
@@ -55,4 +54,4 @@ export default function BlogCard({ post }: BlogCardProps) {
       </div>
     </article>
   )
-}
+} 

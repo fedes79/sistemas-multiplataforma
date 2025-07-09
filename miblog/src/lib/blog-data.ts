@@ -20,7 +20,7 @@ export interface BlogPost {
         "La tecnología web está evolucionando a un ritmo acelerado. Desde la inteligencia artificial hasta las aplicaciones web progresivas, el futuro promete experiencias más inmersivas y eficientes. Los desarrolladores deben mantenerse actualizados con las últimas tendencias para crear aplicaciones que no solo funcionen bien, sino que también ofrezcan experiencias excepcionales a los usuarios.",
       author: "María González",
       date: "2025-06-26",
-      image: "/responsive_big_webp_V3vG4COD7YBe9gBqOQNt4eSu3THQXvoASinhSGUiePo.webp?height=400&width=600",
+      image: "/responsive_big_webp_V3vG4COD7YBe9gBqOQNt4eSu3THQXvoASinhSGUiePo.webp",
       category: "Tecnología",
       readTime: "5 min",
     },
@@ -33,7 +33,7 @@ export interface BlogPost {
         "El diseño UX moderno se centra en crear experiencias intuitivas y accesibles. Los principios incluyen la simplicidad, la consistencia, la retroalimentación inmediata y la accesibilidad universal. Un buen diseño UX no solo se ve bien, sino que también funciona de manera eficiente para todos los usuarios, independientemente de sus habilidades o dispositivos.",
       author: "Carlos Rodríguez",
       date: "2025-06-27",
-      image: "/ux_image.jpg?height=400&width=600",
+      image: "/ux_image.jpg",
       category: "Diseño",
       readTime: "7 min",
     },
@@ -45,9 +45,8 @@ export interface BlogPost {
         "El desarrollo móvil ha evolucionado significativamente. Con frameworks como React Native, Flutter y tecnologías web progresivas, los desarrolladores pueden crear aplicaciones que funcionan perfectamente en múltiples plataformas. La clave está en elegir la herramienta adecuada para cada proyecto y mantener un enfoque centrado en el usuario.",
       author: "Ana Martínez",
       date: "2025-06-29",
-      image: "/desarrollo_mobile.jpg?height=400&width=600",
+      image: "/desarrollo_mobile.jpg",
       category: "Desarrollo",
       readTime: "6 min",
     },
-  ]
-  
+  ] 

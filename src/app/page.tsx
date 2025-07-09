@@ -118,7 +118,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* CTA Section */}
       <section className="py-20 gradient-primary">
         <div className="container py-5">
           <div className="row justify-content-center">
